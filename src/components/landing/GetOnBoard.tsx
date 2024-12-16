@@ -22,9 +22,12 @@ export const GetOnBoard = () => {
               Your manager cares about happy staff, happy customers and smooth operations. Gain Funds delivers it all:
             </h3>
             <ul className="space-y-4 text-lg text-gray-700 mb-8 font-bold">
-              <li className="flex items-center gap-2">
-                <ArrowRight className="text-primary flex-shrink-0" />
-                Highly engaged employees <i>(studies show businesses see a 21% increase in profitability)</i>
+              <li className="flex items-start gap-2">
+                <ArrowRight className="text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <div>Highly engaged employees</div>
+                  <div className="text-sm font-normal text-gray-600 mt-1">A Gallup study shows businesses see a 21% increase in profitability</div>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="text-primary flex-shrink-0" />
