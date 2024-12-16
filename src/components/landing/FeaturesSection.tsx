@@ -18,8 +18,8 @@ export const FeaturesSection = () => {
     },
     {
       icon: <DollarSign className="w-10 h-10 text-primary" />,
-      title: "Boost Your Earnings by 30% Every Month",
-      subheading: "Get Paid What You're Worth",
+      title: "Take Home More Pay",
+      subheading: "Earn What You Deserve",
       description: "At shops using Gain Funds, employees consistently report earning 30% more income each month."
     },
     {
