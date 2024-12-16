@@ -21,10 +21,10 @@ export const HeroSection = () => {
               Gain Funds is built to maximize your tips on every transaction. We make payment and tips effortless for customers—so you earn more. And the best part? You get instant access to your money.
             </p>
             <div className="flex gap-4 flex-wrap">
-              <Button size="lg" className="hover-lift">
+              <Button size="lg" className="hover-lift font-semibold tracking-wide text-white shadow-lg hover:shadow-xl transition-all">
                 Start Earning More <ArrowRight className="ml-2" />
               </Button>
-              <Button size="lg" variant="outline" className="hover-lift">
+              <Button size="lg" variant="outline" className="hover-lift font-semibold tracking-wide shadow-lg hover:shadow-xl transition-all">
                 See How It Works
               </Button>
             </div>
