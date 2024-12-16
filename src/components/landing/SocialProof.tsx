@@ -32,9 +32,9 @@ export const SocialProof = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              <blockquote className="text-xl text-gray-600 italic text-left">
+              <blockquote className="text-xl text-gray-600 italic text-left font-bold">
                 "Honestly, I never realized how annoying it was to round up and hand back change—then have to explain it to a confused customer. With Gain Funds I consistently pull in $60–$80 a day in tips—hit $100 a few times too. It's a smoother experience for both our team and our customers. Plus customers love being able to pay with credit!"
-                <footer className="mt-4 text-gray-500 not-italic">
+                <footer className="mt-4 text-gray-500 not-italic font-bold">
                   — Alex, Atrium Woodland Hills
                 </footer>
               </blockquote>
