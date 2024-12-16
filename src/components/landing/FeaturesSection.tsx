@@ -6,6 +6,12 @@ export const FeaturesSection = () => {
   const features = [
     {
       icon: <DollarSign className="w-10 h-10 text-primary" />,
+      title: "Take Home More Pay",
+      subheading: "Earn What You Deserve",
+      description: "At shops using Gain Funds, employees consistently report earning 30% more income each month."
+    },
+    {
+      icon: <DollarSign className="w-10 h-10 text-primary" />,
       title: "Seamless, Hassle-Free Payments",
       subheading: "No More Counting or Handing Back Change",
       description: "Customers pay the exact amount with debit or credit—no rounding, no hassle. Tipping is seamless and familiar, just like at a coffee shop."
@@ -15,12 +21,6 @@ export const FeaturesSection = () => {
       title: "Multiple Tipping Modes",
       subheading: "Flexible Options for Every Business",
       description: <span><strong>Instant Access:</strong> Get your tips instantly—spend or transfer to your bank anytime.<br /><br /><strong>Pooled Tipping:</strong> Split tips effortlessly with smooth backend reporting for easy payouts.</span>
-    },
-    {
-      icon: <DollarSign className="w-10 h-10 text-primary" />,
-      title: "Take Home More Pay",
-      subheading: "Earn What You Deserve",
-      description: "At shops using Gain Funds, employees consistently report earning 30% more income each month."
     },
     {
       icon: <Clock className="w-10 h-10 text-primary" />,
