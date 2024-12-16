@@ -16,7 +16,7 @@ const testimonials = [
   {
     quote: "I'm able to buy my favorite products right after my shift—straight from my tips. No waiting for tips to be counted and dispersed.",
     name: "Riley",
-    role: "Green Dragon North Hollywood",
+    role: "The Set Los Feliz",
     image: "/lovable-uploads/d4bdfc28-86ff-43c8-a620-b54368107d82.png"
   }
 ];
