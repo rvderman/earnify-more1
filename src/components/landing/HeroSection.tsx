@@ -34,11 +34,10 @@ export const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="relative"
           >
-            <img
-              src="/lovable-uploads/9e63a4dd-0cb7-405d-a2c7-45a28c40a7a9.png"
-              alt="Payment interface mockup"
-              className="w-full rounded-2xl shadow-xl"
-            />
+            <div className="glass-card p-8 rounded-2xl shadow-xl">
+              <h3 className="text-2xl font-semibold mb-4 text-primary">Coming Soon</h3>
+              <p className="text-gray-600">A sleek tablet interface showing tip options with digital wallet icons: debit, credit, Apple Pay, Cash App</p>
+            </div>
           </motion.div>
         </div>
       </div>
