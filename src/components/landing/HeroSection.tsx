@@ -17,7 +17,7 @@ export const HeroSection = () => {
               No More Hassles, Just More Earnings—Get the Tips You Deserve.
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-600">
-              Developed with frontline staff in mind, Gain Funds eliminates awkward payments and makes tipping effortless—so you can start earning more, instantly.
+              Developed with frontline staff in mind, GainFunds eliminates awkward payments and makes tipping effortless—so you can start earning more, instantly.
             </p>
             <div className="flex gap-4 flex-wrap">
               <Button size="lg" className="hover-lift">
