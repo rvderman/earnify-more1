@@ -14,7 +14,7 @@ const testimonials = [
     image: "/lovable-uploads/be368c1c-04cf-4d42-ba6c-22edb198359a.png"
   },
   {
-    quote: "I was able to buy my favorite products right after my shift—straight from my tips. No waiting for tips to be counted and dispersed.",
+    quote: "I'm able to buy my favorite products right after my shift—straight from my tips. No waiting for tips to be counted and dispersed.",
     name: "Riley",
     role: "Green Dragon North Hollywood",
     image: "/lovable-uploads/d4bdfc28-86ff-43c8-a620-b54368107d82.png"
@@ -32,7 +32,7 @@ export const Testimonials = () => {
           className="text-center max-w-2xl mx-auto mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            What Our Users Say
+            What Others Are Saying
           </h2>
           <p className="text-gray-600">
             Real experiences from staff members using GainFunds
