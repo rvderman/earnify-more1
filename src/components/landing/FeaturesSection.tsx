@@ -14,7 +14,7 @@ export const FeaturesSection = () => {
       icon: <Zap className="w-10 h-10 text-primary" />,
       title: "Multiple Tipping Modes",
       subheading: "Flexible Options for Every Business",
-      description: "Instant Access: Get your tips instantly—spend or transfer to your bank anytime. Pooled Tipping: Split tips effortlessly with smooth backend reporting for easy payouts."
+      description: <span><strong>Instant Access:</strong> Get your tips instantly—spend or transfer to your bank anytime.<br /><br /><strong>Pooled Tipping:</strong> Split tips effortlessly with smooth backend reporting for easy payouts.</span>
     },
     {
       icon: <DollarSign className="w-10 h-10 text-primary" />,
