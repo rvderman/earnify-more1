@@ -13,8 +13,11 @@ export const HeroSection = () => {
             transition={{ duration: 0.7 }}
             className="text-left"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
-              No More Hassles, Just More Earnings—Get the Tips You Deserve.
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary space-y-2">
+              <div>You Own the Customer Experience.</div>
+              <div>You Deliver the Knowledge.</div>
+              <div>You Build the Community.</div>
+              <div>Now, Earn What You Deserve.</div>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-600">
               Developed with frontline staff in mind, GainFunds eliminates awkward payments and makes tipping effortless—so you can start earning more, instantly.
