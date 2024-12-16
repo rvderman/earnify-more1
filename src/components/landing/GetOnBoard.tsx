@@ -24,7 +24,7 @@ export const GetOnBoard = () => {
             <ul className="space-y-4 text-lg text-gray-700 mb-8 font-bold">
               <li className="flex items-center gap-2">
                 <ArrowRight className="text-primary flex-shrink-0" />
-                Staff earns more money
+                Highly engaged employees <i>(studies show businesses see a 21% increase in profitability)</i>
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="text-primary flex-shrink-0" />
