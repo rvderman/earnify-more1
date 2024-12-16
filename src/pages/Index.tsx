@@ -1,16 +1,20 @@
 import { HeroSection } from "@/components/landing/HeroSection";
-import { SocialProof } from "@/components/landing/SocialProof";
-import { FeaturesSection } from "@/components/landing/FeaturesSection";
+import { SimpleNavbar } from "@/components/landing/SimpleNavbar";
+import { HowItWorks } from "@/components/landing/HowItWorks";
+import { WhyBetter } from "@/components/landing/WhyBetter";
 import { Testimonials } from "@/components/landing/Testimonials";
+import { FAQ } from "@/components/landing/FAQ";
 import { GetOnBoard } from "@/components/landing/GetOnBoard";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      <SimpleNavbar />
       <HeroSection />
-      <SocialProof />
-      <FeaturesSection />
+      <HowItWorks />
+      <WhyBetter />
       <Testimonials />
+      <FAQ />
       <GetOnBoard />
     </div>
   );
