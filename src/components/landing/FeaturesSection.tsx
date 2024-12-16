@@ -18,9 +18,9 @@ export const FeaturesSection = () => {
     },
     {
       icon: <DollarSign className="w-10 h-10 text-primary" />,
-      title: "Earn 30% More Tips",
+      title: "Boost Your Earnings by 30% Every Month",
       subheading: "Get Paid What You're Worth",
-      description: "Staff using our system frequently see an extra $1,000–$2,500 in tips each month—money that's well deserved."
+      description: "At shops using Gain Funds, employees consistently report earning 30% more income each month."
     },
     {
       icon: <Clock className="w-10 h-10 text-primary" />,
