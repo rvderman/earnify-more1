@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -12,21 +11,6 @@ export const Navbar = () => {
             className="h-8 md:h-10"
           />
         </Link>
-        <div className="hidden md:flex items-center gap-8">
-          <Link to="#how-it-works" className="text-gray-600 hover:text-primary">
-            How It Works
-          </Link>
-          <Link to="#why-better" className="text-gray-600 hover:text-primary">
-            Why It's Better
-          </Link>
-          <Link to="#testimonials" className="text-gray-600 hover:text-primary">
-            Testimonials
-          </Link>
-          <Link to="#faqs" className="text-gray-600 hover:text-primary">
-            FAQs
-          </Link>
-          <Button variant="secondary">Boost My Tips</Button>
-        </div>
       </div>
     </nav>
   );
