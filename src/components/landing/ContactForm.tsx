@@ -14,22 +14,26 @@ import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 
 const formSchema = z.object({
+  storeName: z.string().min(2, "Store name must be at least 2 characters"),
+  storeState: z.string().min(2, "Please enter a valid state"),
   managerName: z.string().min(2, "Manager's name must be at least 2 characters"),
   managerEmail: z.string().email("Please enter a valid email"),
   managerPhone: z.string().min(10, "Please enter a valid phone number"),
-  yourName: z.string().min(2, "Your name must be at least 2 characters"),
-  yourEmail: z.string().email("Please enter a valid email"),
+  yourName: z.string().optional(),
+  currentPaymentSolution: z.string().min(2, "Please specify your current payment solution"),
 });
 
 export const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      storeName: "",
+      storeState: "",
       managerName: "",
       managerEmail: "",
       managerPhone: "",
       yourName: "",
-      yourEmail: "",
+      currentPaymentSolution: "",
     },
   });
 
@@ -43,12 +47,40 @@ export const ContactForm = () => {
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
           control={form.control}
+          name="storeName"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Store Name</FormLabel>
+              <FormControl>
+                <Input placeholder="Enter store name" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="storeState"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Store State</FormLabel>
+              <FormControl>
+                <Input placeholder="Enter store state" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
           name="managerName"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Manager's Name</FormLabel>
               <FormControl>
-                <Input placeholder="John Smith" {...field} />
+                <Input placeholder="Enter manager's name" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -62,7 +94,7 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Manager's Email</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="john@example.com" {...field} />
+                <Input type="email" placeholder="manager@example.com" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -88,9 +120,9 @@ export const ContactForm = () => {
           name="yourName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Your Name</FormLabel>
+              <FormLabel>Your Name (Optional)</FormLabel>
               <FormControl>
-                <Input placeholder="Your name" {...field} />
+                <Input placeholder="Enter your name (optional)" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -99,12 +131,12 @@ export const ContactForm = () => {
 
         <FormField
           control={form.control}
-          name="yourEmail"
+          name="currentPaymentSolution"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Your Email</FormLabel>
+              <FormLabel>Current Payment Solution</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="you@example.com" {...field} />
+                <Input placeholder="e.g., Square, Stripe, etc." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
