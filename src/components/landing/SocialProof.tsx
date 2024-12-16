@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 export const SocialProof = () => {
   return (
@@ -40,6 +41,25 @@ export const SocialProof = () => {
               </blockquote>
             </motion.div>
           </div>
+        </motion.div>
+
+        {/* Universal System Message */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="mt-24 text-center max-w-4xl mx-auto"
+        >
+          <p className="text-2xl md:text-3xl leading-relaxed text-gray-700 mb-8">
+            A universal system that is as easy as texting without the need to download apps or register. Gain Funds removes friction and makes it easy to transact with anyone, anytime, and anywhere.
+          </p>
+          <Button 
+            size="lg" 
+            className="hover-lift font-semibold tracking-wide bg-gradient-to-r from-primary to-primary-dark text-white shadow-lg hover:shadow-xl transition-all px-8 py-6 text-xl rounded-full"
+          >
+            Get Started In Seconds
+          </Button>
         </motion.div>
       </div>
     </section>
