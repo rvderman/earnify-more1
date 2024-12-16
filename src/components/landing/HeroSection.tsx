@@ -32,11 +32,24 @@ export const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative"
+            className="relative flex justify-center items-center"
           >
-            <div className="glass-card p-8 rounded-2xl shadow-xl">
-              <h3 className="text-2xl font-semibold mb-4 text-primary">Coming Soon</h3>
-              <p className="text-gray-600">A sleek tablet interface showing tip options with digital wallet icons: debit, credit, Apple Pay, Cash App</p>
+            <div className="relative w-[300px] md:w-[380px]">
+              {/* iPhone Frame */}
+              <div className="relative mx-auto border-[14px] border-black rounded-[2.5rem] h-[600px] md:h-[750px] w-full shadow-xl">
+                <div className="absolute top-0 w-full h-[25px] bg-black rounded-t-[1.1rem]">
+                  <div className="absolute top-[7px] left-1/2 transform -translate-x-1/2 h-[4px] w-[50px] bg-gray-800 rounded-full"></div>
+                  <div className="absolute top-[3px] right-[20px] h-[4px] w-[4px] bg-gray-800 rounded-full"></div>
+                </div>
+                {/* App Screenshot */}
+                <img 
+                  src="/lovable-uploads/8a48a95c-2620-4405-bd87-eddbb60bac5b.png" 
+                  alt="Gainfunds App Interface" 
+                  className="w-full h-full object-cover rounded-[1.3rem]"
+                />
+                {/* Home Button / Bottom Bar */}
+                <div className="absolute bottom-0 w-full h-[4px] bg-black rounded-b-[1.1rem]"></div>
+              </div>
             </div>
           </motion.div>
         </div>
