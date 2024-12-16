@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "I used to miss out on so many tips, but not anymore. I'm making 30% more every month, and the best part? I get my money instantly.",
+    quote: "Gain Funds has been a total game-changer for me and our shop. I feel way more motivated to show up, help customers, and make sure they leave with exactly what they need. It's dope seeing regulars come in just to see me – I'm earning more, they're happy, and the vibe is always on point. Win-win!",
     name: "Jordan",
     role: "Green Dragon North Hollywood",
     image: "/lovable-uploads/5fd7d553-2c48-4544-ba6b-b6dda862eadb.png"
