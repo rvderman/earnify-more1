@@ -2,6 +2,7 @@ import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { SocialProof } from "@/components/landing/SocialProof";
 import { FeaturesSection } from "@/components/landing/FeaturesSection";
+import { Testimonials } from "@/components/landing/Testimonials";
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <HeroSection />
       <SocialProof />
       <FeaturesSection />
+      <Testimonials />
     </div>
   );
 };
