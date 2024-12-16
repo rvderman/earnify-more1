@@ -45,12 +45,6 @@ export const GetOnBoard = () => {
                 "Hey [Manager], I found a payment solution that fits perfectly with our current setup. It allows customers to pay with debit or credit without any rounding, which creates a smoother experience for everyone. It's approved by regulators, backed by an 80-year-old bank, and trusted by some of the biggest retail names in the country. It also includes advanced tipping features, like support for both pooled and individual tips, while removing tax and accounting complexities entirely. Can I connect you with them to learn more?"
               </p>
             </div>
-
-            <div className="mt-8 bg-white/50 rounded-xl p-6">
-              <p className="text-lg text-gray-700 font-bold">
-                According to Gallup, businesses with highly engaged employees see a 21% increase in profitability. When employees earn more tips, it reflects their engagement and motivation. Engaged staff deliver better customer experiences, leading to greater satisfaction and sales growth.
-              </p>
-            </div>
           </div>
 
           <div className="bg-gray-50 rounded-2xl p-8">
