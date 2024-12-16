@@ -43,7 +43,7 @@ export const FeaturesSection = () => {
           <h2 className="text-4xl font-bold text-primary mb-4">Key Features</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -67,62 +67,6 @@ export const FeaturesSection = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-4xl font-bold text-primary mb-16">Solution</h2>
-          <div className="relative max-w-4xl mx-auto">
-            <div className="grid grid-cols-3 gap-8">
-              {/* Payment Step */}
-              <div className="text-center">
-                <div className="bg-white p-6 rounded-lg shadow-lg mb-4">
-                  <Smartphone className="w-12 h-12 mx-auto mb-4 text-primary" />
-                  <h3 className="font-semibold mb-2">Customer Pays</h3>
-                  <img 
-                    src="/lovable-uploads/44ace8af-5435-45df-8e38-b84951c89201.png" 
-                    alt="Payment Screen" 
-                    className="w-full rounded-lg shadow-sm"
-                  />
-                </div>
-              </div>
-
-              {/* Tip Selection Step */}
-              <div className="text-center">
-                <div className="bg-white p-6 rounded-lg shadow-lg mb-4">
-                  <DollarSign className="w-12 h-12 mx-auto mb-4 text-primary" />
-                  <h3 className="font-semibold mb-2">Selects Tip</h3>
-                  <img 
-                    src="/lovable-uploads/006de22a-4029-4c6b-aa02-e60f6f3cc7f8.png" 
-                    alt="Tip Selection" 
-                    className="w-full rounded-lg shadow-sm"
-                  />
-                </div>
-              </div>
-
-              {/* Notification Step */}
-              <div className="text-center">
-                <div className="bg-white p-6 rounded-lg shadow-lg mb-4">
-                  <Zap className="w-12 h-12 mx-auto mb-4 text-primary" />
-                  <h3 className="font-semibold mb-2">Real-time Notification</h3>
-                  <img 
-                    src="/lovable-uploads/edbd7ce4-73d0-445e-9b55-037f47c29735.png" 
-                    alt="Tip Notification" 
-                    className="w-full rounded-lg shadow-sm"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Connecting Lines */}
-            <div className="absolute top-1/2 left-1/3 w-1/3 h-0.5 bg-primary transform -translate-y-1/2"></div>
-            <div className="absolute top-1/2 right-1/3 w-1/3 h-0.5 bg-primary transform -translate-y-1/2"></div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
