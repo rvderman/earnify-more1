@@ -143,7 +143,7 @@ export const ContactForm = () => {
           )}
         />
 
-        <Button type="submit" size="lg" className="w-full">
+        <Button type="submit" size="lg" className="w-full text-white">
           Reach out to My Manager
         </Button>
       </form>
