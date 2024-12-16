@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { SocialProof } from "@/components/landing/SocialProof";
+import { FeaturesSection } from "@/components/landing/FeaturesSection";
 
 const Index = () => {
   return (
@@ -8,7 +9,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <SocialProof />
-      {/* Additional sections will be implemented in subsequent updates */}
+      <FeaturesSection />
     </div>
   );
 };
