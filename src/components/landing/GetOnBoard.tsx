@@ -26,7 +26,7 @@ export const GetOnBoard = () => {
                 <ArrowRight className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <div>Highly engaged employees</div>
-                  <div className="text-sm font-normal text-gray-600 mt-1">A Gallup study shows businesses see a 21% increase in profitability</div>
+                  <div className="text-sm font-normal text-gray-600 mt-1 italic">A Gallup study shows businesses see a 21% increase in profitability</div>
                 </div>
               </li>
               <li className="flex items-center gap-2">
