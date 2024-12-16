@@ -24,7 +24,7 @@ export const HeroSection = () => {
               <Button size="lg" className="hover-lift font-semibold tracking-wide text-white shadow-lg hover:shadow-xl transition-all">
                 Start Earning More <ArrowRight className="ml-2" />
               </Button>
-              <Button size="lg" variant="outline" className="hover-lift font-semibold tracking-wide shadow-lg hover:shadow-xl transition-all">
+              <Button size="lg" variant="outline" className="hover-lift font-semibold tracking-wide text-white shadow-lg hover:shadow-xl transition-all">
                 See How It Works
               </Button>
             </div>
