@@ -21,8 +21,8 @@ export const SocialProof = () => {
               transition={{ delay: 0.2 }}
             >
               <img
-                src="/lovable-uploads/edbd7ce4-73d0-445e-9b55-037f47c29735.png"
-                alt="Staff member using tablet"
+                src="/lovable-uploads/a7d6cb38-f806-4a2c-bc83-9ddc6ac58ad4.png"
+                alt="Staff member smiling at work"
                 className="rounded-2xl shadow-lg w-full max-w-md mx-auto"
               />
             </motion.div>
