@@ -41,13 +41,59 @@ export const Testimonials = () => {
         </motion.div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {testimonials.map((testimonial, index) => (
+          {/* First Testimonial */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0 }}
+            className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+          >
+            <div className="flex flex-col items-center">
+              <div className="w-24 h-24 mb-6">
+                <img
+                  src={testimonials[0].image}
+                  alt={`${testimonials[0].name}'s portrait`}
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <blockquote className="text-gray-600 text-center mb-6 italic">
+                "{testimonials[0].quote}"
+              </blockquote>
+              <div className="text-center">
+                <p className="font-semibold text-primary">{testimonials[0].name}</p>
+                <p className="text-sm text-gray-500">{testimonials[0].role}</p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Universal System Message after first testimonial */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="md:col-span-3 my-12 text-center max-w-4xl mx-auto"
+          >
+            <p className="text-2xl md:text-3xl leading-relaxed text-gray-700 mb-8">
+              A universal system that is as easy as texting without the need to download apps or register. Gain Funds removes friction and makes it easy to transact with anyone, anytime, and anywhere.
+            </p>
+            <Button 
+              size="lg" 
+              className="hover-lift font-semibold tracking-wide bg-gradient-to-r from-primary to-primary-dark text-white shadow-lg hover:shadow-xl transition-all px-8 py-6 text-xl rounded-full"
+            >
+              Get Started In Seconds
+            </Button>
+          </motion.div>
+
+          {/* Remaining Testimonials */}
+          {testimonials.slice(1).map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
+              transition={{ delay: (index + 1) * 0.2 }}
               className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex flex-col items-center">
@@ -69,25 +115,6 @@ export const Testimonials = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Universal System Message */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="mt-16 text-center max-w-4xl mx-auto"
-        >
-          <p className="text-2xl md:text-3xl leading-relaxed text-gray-700 mb-8">
-            A universal system that is as easy as texting without the need to download apps or register. Gain Funds removes friction and makes it easy to transact with anyone, anytime, and anywhere.
-          </p>
-          <Button 
-            size="lg" 
-            className="hover-lift font-semibold tracking-wide bg-gradient-to-r from-primary to-primary-dark text-white shadow-lg hover:shadow-xl transition-all px-8 py-6 text-xl rounded-full"
-          >
-            Get Started In Seconds
-          </Button>
-        </motion.div>
       </div>
     </section>
   );
