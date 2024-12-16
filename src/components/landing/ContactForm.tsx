@@ -136,7 +136,7 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Current Payment Solution</FormLabel>
               <FormControl>
-                <Input placeholder="e.g., Square, Stripe, etc." {...field} />
+                <Input placeholder="e.g., Cashless ATM, Cash Only, etc." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
