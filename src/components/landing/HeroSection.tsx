@@ -3,6 +3,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export const HeroSection = () => {
+  const scrollToForm = () => {
+    const formSection = document.querySelector('#contact-form-section');
+    formSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="container mx-auto px-4">
@@ -37,6 +42,7 @@ export const HeroSection = () => {
             <div className="flex gap-4 flex-wrap">
               <Button 
                 size="lg" 
+                onClick={scrollToForm}
                 className="hover-lift font-semibold tracking-wide bg-gradient-to-r from-accent to-accent-dark text-white shadow-lg hover:shadow-xl transition-all px-8 py-6 text-lg rounded-xl"
               >
                 Start Earning More <ArrowRight className="ml-2 w-6 h-6" />
