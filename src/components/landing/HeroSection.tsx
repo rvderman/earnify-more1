@@ -55,21 +55,11 @@ export const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="relative flex justify-center items-center"
           >
-            {/* iPhone Frame */}
-            <div className="relative w-[300px] md:w-[380px]">
-              <div className="relative mx-auto border-[14px] border-black rounded-[2.5rem] h-[600px] md:h-[750px] w-full shadow-xl">
-                <div className="absolute top-0 w-full h-[25px] bg-black rounded-t-[1.1rem]">
-                  <div className="absolute top-[7px] left-1/2 transform -translate-x-1/2 h-[4px] w-[50px] bg-gray-800 rounded-full"></div>
-                  <div className="absolute top-[3px] right-[20px] h-[4px] w-[4px] bg-gray-800 rounded-full"></div>
-                </div>
-                <img 
-                  src="/lovable-uploads/8a48a95c-2620-4405-bd87-eddbb60bac5b.png" 
-                  alt="Gainfunds App Interface" 
-                  className="w-full h-full object-cover rounded-[1.3rem]"
-                />
-                <div className="absolute bottom-0 w-full h-[4px] bg-black rounded-b-[1.1rem]"></div>
-              </div>
-            </div>
+            <img 
+              src="/lovable-uploads/700ee33e-9a1b-4056-ab11-06704a8fe516.png" 
+              alt="Person using Gainfunds App on mobile phone"
+              className="w-full h-auto rounded-2xl shadow-2xl"
+            />
           </motion.div>
         </div>
       </div>
