@@ -51,12 +51,6 @@ export const GetOnBoard = () => {
           </div>
 
           <div className="bg-gray-50 rounded-2xl p-8">
-            <p className="text-lg text-gray-700 mb-6 font-bold">
-              Drop their info below, and we'll handle the rest. You deserve better tips, and we'll show your manager how easy it is to make it happen—plus, how it's a win-win for the whole shop.
-            </p>
-            <p className="text-lg text-gray-700 mb-8 font-bold">
-              Stores using Gain Funds also see a 20-40% lift in sales. Better tips. More sales. Everyone wins.
-            </p>
             <HubSpotForm />
           </div>
         </motion.div>
