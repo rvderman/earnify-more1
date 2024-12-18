@@ -56,9 +56,9 @@ export const HeroSection = () => {
             className="relative flex justify-center items-center"
           >
             <img 
-              src="/lovable-uploads/2f446a56-95fd-48d0-9543-3fd372a78597.png" 
+              src="/lovable-uploads/9f8073c2-8734-4fbe-ae43-a876c9913348.png" 
               alt="Gainfunds mobile app interface showing account balance and transactions"
-              className="w-full max-w-[400px] h-auto rounded-[2.5rem] shadow-2xl"
+              className="w-full max-w-[500px] h-auto transform hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
         </div>
