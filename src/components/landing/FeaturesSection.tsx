@@ -43,7 +43,7 @@ export const FeaturesSection = () => {
           <h2 className="text-4xl font-bold text-primary mb-4">Key Features</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -67,6 +67,20 @@ export const FeaturesSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex justify-center"
+        >
+          <img 
+            src="/lovable-uploads/2228016d-828d-4b40-a5af-9dfb0237345c.png"
+            alt="Mobile payment success screen"
+            className="rounded-lg shadow-xl max-w-md w-full"
+          />
+        </motion.div>
       </div>
     </section>
   );
