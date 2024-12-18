@@ -78,7 +78,7 @@ export const FeaturesSection = () => {
           <img 
             src="/lovable-uploads/2228016d-828d-4b40-a5af-9dfb0237345c.png"
             alt="Mobile payment success screen"
-            className="rounded-lg shadow-xl max-w-md w-full"
+            className="rounded-lg shadow-xl max-w-[768px] w-full"
           />
         </motion.div>
       </div>
