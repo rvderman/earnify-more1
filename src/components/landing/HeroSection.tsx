@@ -16,7 +16,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-left md:order-2"
+            className="text-left"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               <motion.div
@@ -53,7 +53,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative flex justify-center items-center md:order-1"
+            className="relative flex justify-center items-center"
           >
             <img 
               src="/lovable-uploads/8598ee6e-8a84-4e03-8a2b-3e308d79e5cf.png" 
