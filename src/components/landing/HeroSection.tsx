@@ -16,7 +16,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-left"
+            className="text-left md:order-2"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               <motion.div
@@ -53,12 +53,12 @@ export const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative flex justify-center items-center"
+            className="relative flex justify-center items-center md:order-1"
           >
             <img 
-              src="/lovable-uploads/9f8073c2-8734-4fbe-ae43-a876c9913348.png" 
+              src="/lovable-uploads/8598ee6e-8a84-4e03-8a2b-3e308d79e5cf.png" 
               alt="Gainfunds mobile app interface showing account balance and transactions"
-              className="w-full max-w-[500px] h-auto transform hover:scale-105 transition-transform duration-300"
+              className="w-full max-w-[600px] md:max-w-[800px] h-auto transform hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
         </div>
