@@ -1,8 +1,33 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { HubSpotForm } from "./HubSpotForm";
+import { useEffect, useState, useRef } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 export const GetOnBoard = () => {
+  const [showForm, setShowForm] = useState(false);
+  const managerParagraphRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (managerParagraphRef.current) {
+        const rect = managerParagraphRef.current.getBoundingClientRect();
+        // If the bottom of the paragraph is above the viewport
+        if (rect.bottom < 0 && !showForm) {
+          setShowForm(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [showForm]);
+
   return (
     <section id="contact-form-section" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -43,16 +68,23 @@ export const GetOnBoard = () => {
               </li>
             </ul>
 
-            <div className="bg-white/50 rounded-xl p-6">
+            <div ref={managerParagraphRef} className="bg-white/50 rounded-xl p-6">
               <p className="text-lg italic text-gray-700 font-bold">
                 "Hey [Manager], I found a payment solution that fits perfectly with our current setup. It allows customers to pay with debit or credit without any rounding, which creates a smoother experience for everyone. It's approved by regulators, backed by an 80-year-old bank, and trusted by some of the biggest retail names in the country. It also includes advanced tipping features, like support for both pooled and individual tips, while removing tax and accounting complexities entirely. Can I connect you with them to learn more?"
               </p>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <HubSpotForm />
-          </div>
+          <Dialog open={showForm} onOpenChange={setShowForm}>
+            <DialogContent className="max-w-2xl">
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold text-center mb-4">
+                  Let's Get Started
+                </DialogTitle>
+              </DialogHeader>
+              <HubSpotForm />
+            </DialogContent>
+          </Dialog>
         </motion.div>
       </div>
     </section>
