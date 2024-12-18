@@ -17,15 +17,21 @@ export const GetOnBoard = () => {
     const handleScroll = () => {
       if (managerParagraphRef.current) {
         const rect = managerParagraphRef.current.getBoundingClientRect();
+        console.log('Scroll detected - paragraph position:', rect.bottom);
         // If the bottom of the paragraph is above the viewport
         if (rect.bottom < 0 && !showForm) {
+          console.log('Showing form - paragraph is above viewport');
           setShowForm(true);
         }
       }
     };
 
+    console.log('Setting up scroll listener');
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      console.log('Cleaning up scroll listener');
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [showForm]);
 
   return (
