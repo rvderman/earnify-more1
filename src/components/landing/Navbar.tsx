@@ -1,13 +1,26 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
+import { useEffect, useState } from "react";
+import { removeImageBackground } from "@/utils/imageUtils";
 
 export const Navbar = () => {
+  const [logoUrl, setLogoUrl] = useState("/lovable-uploads/8a77fb5a-2a25-4dd6-83d8-fd7dfe105401.png");
+
+  useEffect(() => {
+    const processLogo = async () => {
+      const processedUrl = await removeImageBackground(logoUrl);
+      setLogoUrl(processedUrl);
+    };
+
+    processLogo();
+  }, []);
+
   return (
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-50 py-4 border-b">
       <div className="container mx-auto flex items-center justify-between px-4">
         <a href="https://gainfunds.com" className="flex items-center">
           <img 
-            src="/lovable-uploads/8a77fb5a-2a25-4dd6-83d8-fd7dfe105401.png" 
+            src={logoUrl} 
             alt="Gainfunds Logo" 
             className="h-8 md:h-10"
           />
