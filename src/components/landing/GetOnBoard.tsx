@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { ContactForm } from "./ContactForm";
+import { HubSpotForm } from "./HubSpotForm";
 
 export const GetOnBoard = () => {
   return (
@@ -57,7 +57,7 @@ export const GetOnBoard = () => {
             <p className="text-lg text-gray-700 mb-8 font-bold">
               Stores using Gain Funds also see a 20-40% lift in sales. Better tips. More sales. Everyone wins.
             </p>
-            <ContactForm />
+            <HubSpotForm />
           </div>
         </motion.div>
       </div>
